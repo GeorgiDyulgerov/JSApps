@@ -1,0 +1,56 @@
+table{
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 2em;
+    border: solid;
+}
+header{
+    text-align: center;
+}
+header#books{
+    font-size: 2em;
+}
+th{
+    background: darkred;
+    border: solid;
+}
+td{
+    border: solid;
+}
+body{
+    background: gray;
+}
+div#add-book{
+    border: solid;
+    background: lightgrey;
+    margin: 1em;
+    font-size: 2em;
+}div#edit-book{
+    border: solid;
+    background: yellow;
+    margin: 1em;
+    font-size: 2em;
+}
+input{
+    font-size: 1em;
+    margin: 1em;
+}
+button{
+    font-size: 1em;
+}
+button#submit{
+    position: relative;
+    left: 25em;
+    bottom: 7em;
+    height: 2em;
+    width: 5em;
+}button#editBook{
+    position: relative;
+    left: 25em;
+    bottom: 7em;
+    height: 2em;
+    width: 5em;
+}
+form{
+    margin: 1em;
+}
