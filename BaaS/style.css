@@ -1,0 +1,14 @@
+li {
+    margin-left: 1em;
+    display: inline;
+    float: left;
+    border: dashed;
+}
+button{
+    height: 3em;
+    width: 10em;
+}
+main{
+    margin: 2em;
+    clear: both;
+}
