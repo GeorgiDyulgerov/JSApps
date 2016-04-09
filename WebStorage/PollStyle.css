@@ -1,0 +1,29 @@
+header{
+      text-align: center;
+      color: red;
+      opacity:0.75;
+  }
+body{
+       background-color: gray;
+       opacity: 1;
+   }
+form{
+    margin-left: 1em;
+}
+input[ name = "answer" ]{
+    margin-left: 1em;
+}
+button{
+    border: darkred solid;
+    height: 4em;
+    width: 10em;
+    margin: 2em;
+    font-weight: bold;
+}
+#time{
+    text-align: center;
+    width: 3em;
+    border: solid;
+    font-size: 5em;
+    background-color: darkred;
+}

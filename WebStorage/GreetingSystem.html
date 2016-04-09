@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Greetings</title>
+    <script src="https://code.jquery.com/jquery-2.2.1.js"></script>
+</head>
+<body>
+    <div id="greetings"></div>
+    <div id="sessionCount"></div>
+    <div id="localCount"></div>
+    <script>
+        var greeting = $('#greetings'),
+                sessionCounter = $('#sessionCount'),
+                totalCount = $('#localCount');
+
+        while (!localStorage.name) {
+            localStorage.name = prompt('Please enter your name:');
+        }
+
+        while (!localStorage.count){
+            localStorage.count = 0;
+        }
+
+        while (!sessionStorage.count){
+            sessionStorage.count = 0;
+        }
+
+        localStorage.count++;
+        sessionStorage.count++;
+        greeting.text('Greetings ' + localStorage.name);
+        sessionCounter.text('Session visits = ' + sessionStorage.count);
+        totalCount.text('Total visits = ' + localStorage.count);
+    </script>
+</body>
+</html>
