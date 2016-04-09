@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Table Generator</title>
+</head>
+<body>
+    <style>
+        table{
+            width: 600px;
+        }
+        table {
+            border-collapse: collapse;
+        }
+        th, td {
+            width: 150px;
+            border: 1px solid black;
+            padding: 2px 5px;
+        }
+        th {
+            text-align: center;
+            text-transform: capitalize;
+            background-color: forestgreen;
+        }
+    </style>
+
+    <div id="wrapper">
+        <table></table>
+    </div>
+
+<script src="jquery-2.2.1.js"></script>
+<script>
+    var inputObject = [{"manufacturer":"BMW","model":"E92 320i","year":2011,"price":50000,"class":"Family"},
+    {"manufacturer":"Porsche","model":"Panamera","year":2012,"price":100000,"class":"Sport"},
+    {"manufacturer":"Peugeot","model":"305","year":1978,"price":1000,"class":"Family"}];
+    var th = "<th>" + "Manufacturer" + "</th>"
+            +"<th>" + "Model" + "</th>"
+            +"<th>" + "Year" + "</th>"
+            +"<th>" + "Price" + "</th>"
+            +"<th>" + "Class" + "</th>";
+    $('table').append(th);
+    var tr;
+    for (var i = 0; i < inputObject.length; i++) {
+        tr = $('<tr/>');
+        tr.append("<td>" + inputObject[i].manufacturer + "</td>");
+        tr.append("<td>" + inputObject[i].model + "</td>");
+        tr.append("<td>" + inputObject[i].year + "</td>");
+        tr.append("<td>" + inputObject[i].price + "</td>");
+        tr.append("<td>" + inputObject[i].class + "</td>");
+        $('table').append(tr);
+    }
+</script>
+</body>
+</html>

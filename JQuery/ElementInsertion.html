@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ElementInsertion</title>
+</head>
+<body>
+    <div id="wrapper">
+        <header><h1>ElementInsertion</h1></header>
+    </div>
+
+<script src="jquery-2.2.1.js"></script>
+<script>
+    alert("Get ready for insertion");
+    $('header').before("<article><p>hello before</p></article>");
+    $('header').after("<article><p>hello after</p></article>");
+</script>
+</body>
+</html>
